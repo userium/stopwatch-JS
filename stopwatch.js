@@ -4,7 +4,7 @@ var working = 0;
 var stopwatch = { //stopwatch object
 	// Start the stopwatch
 	start: function() {
-		if(working == 0) { // if the stopwatch is not running, run the function
+		if(working === 0) { // if the stopwatch is not running, run the function
 			working = 1; // Stopwatch is running
 			this.increment(); // Running the increment() function
 		}
@@ -17,7 +17,7 @@ var stopwatch = { //stopwatch object
 	},
 	// Stop the stopwatch
 	stop: function() {
-		if(working = 1) { // If the stopwatch is working, run the function
+		if(working === 1) { // If the stopwatch is working, run the function
 			clearInterval(timer); // Stop the setInterval function from running
 			working = 0; // Stopwatch is not running
 		}
